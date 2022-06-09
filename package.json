@@ -1,0 +1,36 @@
+{
+  "name": "ptcookie.github.io",
+  "description": "whoami page for PtCookie",
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "PtCookie",
+    "email": "ptcookie@outlook.com",
+    "url": "https://blog.ptcookie.dev/"
+  },
+  "packageManager": "yarn@1.22.17",
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.5.1"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true,
+      "es2017": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ]
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
+}

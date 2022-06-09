@@ -1,0 +1,30 @@
+# Site settings
+title: whoami(ptCookie)
+description: '배우는 걸 좋아하는 웹 개발자입니다'
+domain: whoami.ptcookie.dev
+baseurl: ''
+url: 'https://whoami.ptcookie.dev'
+
+github_username:  PtCookie
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jemoji
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - CNAME
+  - LICENSE
+  - README.md
+  - package.json
+  - yarn.lock
+  - docker-compose.yml

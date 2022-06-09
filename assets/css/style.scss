@@ -1,0 +1,70 @@
+---
+---
+
+:root {
+    --console-background: #1e1f21;
+    --console-color: #5ce626;
+}
+
+header {
+    background-image: linear-gradient(120deg, #ff7f50, #ee82ee, #87ceeb, #006400);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+
+    text-align: center;
+
+    .title-white {
+        color: var(--primary-inverse);
+    }
+
+    .nav-center {
+        justify-content: center;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+footer {
+    display: flex;
+
+    justify-content: space-between;
+
+    border-top: 1px solid var(--muted-border-color);
+
+    span {
+        display: flex;
+
+        align-items: center;
+
+        color: var(--muted-color);
+
+        a {
+            margin-left: 0.25rem;
+            vertical-align: middle;
+
+            img {
+                height: 2rem;
+            }
+        }
+    }
+}
+
+.toggle-theme {
+    padding: calc(var(--spacing) / 2);
+
+    position: fixed;
+    right: calc(var(--spacing) + var(--scrollbar-width));
+    bottom: var(--spacing);
+
+    width: auto;
+}
