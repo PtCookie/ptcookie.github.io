@@ -1,15 +1,3 @@
-# Output
 _site
-
-# Dependencies
-node_modules
-
-# IDE
-.idea
-
-# Caches
 .sass-cache
 .jekyll-metadata
-
-# Misc
-.DS_Store
