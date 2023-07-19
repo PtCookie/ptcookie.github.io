@@ -1,35 +1,46 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "ko-KR" }}" data-theme="light">
-<head>
-  <meta charset="UTF-8" />
-  {% seo %}
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#182d27">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="stylesheet" href="https://unpkg.com/@csstools/normalize.css">
-  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  {% include head-custom.html %}
-</head>
-<body>
+<html lang="{{ site.lang | default: 'ko-KR' }}">
 
-{% if page.url == "/" %}
-  {% include intro.html %}
-{% endif %}
+  {% include head.html %}
 
-{% include header.html %}
+  <body>
 
-<main class="container">
-  {{ content }}
-</main>
+    <div class="container content">
+      <header class="masthead">
+        <h3 class="masthead-title">
+          <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+          <small>{{ site.tagline }}</small>
+        </h3>
+      </header>
 
-{% include footer.html %}
+      <main>
+        {{ content }}
+      </main>
 
-<button class="contrast toggle-theme">
-  &#127765;
-</button>
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. {{
+          site.github_username }}
+        </small>
+        <span>
+          Hosted by
+          <a href="https://pages.github.com">
+            <img src="/assets/GitHub_Logo.png" alt="GitHub Pages" />
+          </a>
+        </span>
+      </footer>
+    </div>
 
-<script type="module" src="{{ '/assets/js/script.js?v=' | append: site.github.build_revision | relative_url }}"></script>
-
-</body>
+    {% if site.ga_analytics %}
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+       ga('create', '{{ site.ga_analytics }}', 'auto');
+       ga('send', 'pageview');
+     </script>
+    {% endif %}
+    <script src="{{ '/assets/script.js' | relative_url }}"></script>
+  </body>
 </html>

@@ -21,6 +21,8 @@ gem 'github-pages', '~> 228', group: :jekyll_plugins
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  gem 'jekyll-gist', '~> 1.5.0'
+  gem 'jekyll-paginate', '~> 1.1.0'
   gem 'jekyll-seo-tag', '~> 2.8.0'
   gem 'jemoji', '~> 0.12.0'
 end
