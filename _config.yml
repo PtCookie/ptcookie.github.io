@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   배우는 걸 좋아하는 웹 개발자입니다.
 tagline: Web developer love to learn
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://whoami.ptcookie.dev" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://whoami.ptcookie.net" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  PtCookie
 
@@ -57,4 +57,3 @@ exclude:
   - Containerfile
   - LICENSE
   - README.md
-

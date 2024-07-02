@@ -1,4 +1,4 @@
-# whoami.ptcookie.dev
+# whoami.ptcookie.net
 
 Personal introduction page.
 
@@ -11,4 +11,3 @@ Use [Poole](https://github.com/poole/poole) theme.
 ## License
 
 MIT &copy; [PtCookie](https://blog.ptcookie.dev/)
-
