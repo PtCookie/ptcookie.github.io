@@ -1,4 +1,4 @@
-FROM docker.io/library/ruby:2.7.4-alpine
+FROM docker.io/library/ruby:3.3.4-alpine
 
 ENV BUNDLE_DISABLE_PLATFORM_WARNINGS=true
 

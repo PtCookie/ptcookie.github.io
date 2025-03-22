@@ -21,12 +21,12 @@ tagline: Web developer love to learn
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://whoami.ptcookie.net" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
-github_username:  PtCookie
+github_username: PtCookie
 
 # Build settings
 permalink: pretty
 sass:
-  style: :compressed
+  style: compressed
 
 markdown: kramdown
 # theme: minima
@@ -48,11 +48,11 @@ author:
 exclude:
   - Gemfile
   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  # - node_modules
+  # - vendor/bundle/
+  # - vendor/cache/
+  # - vendor/gems/
+  # - vendor/ruby/
   - CNAME
   - Containerfile
   - LICENSE
